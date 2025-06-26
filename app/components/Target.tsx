@@ -42,7 +42,7 @@ export function Target({ target }: TargetProps) {
       <div className='absolute inset-0 backdrop-blur-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md'></div>
 
       {/* Target number badge */}
-      <div className='absolute top-2 left-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-full w-6 h-6 flex items-center justify-center text-xs font-medium'>
+      <div className='absolute top-2 left-2 bg-white text-gray-900 rounded-full w-6 h-6 flex items-center justify-center text-xs font-medium'>
         {target.number}
       </div>
 
@@ -68,7 +68,7 @@ export function Target({ target }: TargetProps) {
       {/* View button */}
       <div className='absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
         {solved ? (
-          <span className='bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-3 py-1.5 rounded-full text-sm font-medium shadow-sm hover:shadow-md transition-all duration-200 border border-gray-200 dark:border-gray-700'>
+          <span className='bg-white text-gray-900 px-3 py-1.5 rounded-full text-sm font-medium shadow-sm hover:shadow-md transition-all duration-200 border border-gray-200'>
             View
           </span>
         ) : (

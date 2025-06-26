@@ -71,7 +71,7 @@ function BackToButton() {
     <Link
       to='/'
       aria-label='Back to Battles'
-      className='flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium hover:underline'
+      className='flex items-center gap-2 text-blue-600 text-sm font-medium hover:underline'
     >
       <svg
         width='16'
@@ -94,23 +94,23 @@ function TargetDetails({ target }: TargetDetailsProps) {
   return (
     <div className='flex flex-col gap-4'>
       <div className='flex items-center gap-3 mb-2'>
-        <span className='bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full px-2 py-0.5 text-xs font-medium'>
+        <span className='bg-blue-100 text-blue-800 rounded-full px-2 py-0.5 text-xs font-medium'>
           #{target.number}
         </span>
-        <h1 className='text-gray-900 dark:text-gray-100 text-xl font-medium'>
+        <h1 className='text-gray-900 text-xl font-medium'>
           {target.name}
         </h1>
       </div>
 
-      <p className='text-gray-500 dark:text-gray-400 text-sm'>
+      <p className='text-gray-500 text-sm'>
         From Battle #{target.battleNumber}: {target.battleName}
       </p>
 
       {/* Solution metadata */}
       <div className='mt-2 flex flex-col gap-1'>
-        <p className='text-sm text-gray-500 dark:text-gray-400'>
+        <p className='text-sm text-gray-500'>
           Match:
-          <span className='font-medium text-green-600 dark:text-green-400'>
+          <span className='font-medium text-green-600'>
             &nbsp;100%
           </span>
         </p>
@@ -134,7 +134,7 @@ function InteractiveSandbox({ solution }: { solution: string }) {
 
   return (
     <div className='w-full md:w-[800px]'>
-      <h2 className='text-gray-900 dark:text-gray-100 text-lg font-medium mb-4'>
+      <h2 className='text-gray-900 text-lg font-medium mb-4'>
         Interactive Sandbox
       </h2>
       <div className='w-full'>
@@ -179,7 +179,7 @@ function RelatedTargets({
 }: RelatedTargetsProps) {
   return (
     <div className='flex flex-col gap-4 mt-4'>
-      <h3 className='text-gray-900 dark:text-gray-100 text-lg font-medium'>
+      <h3 className='text-gray-900 text-lg font-medium'>
         All Targets from Battle #{battleNumber}
       </h3>
 

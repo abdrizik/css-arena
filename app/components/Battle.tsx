@@ -13,21 +13,21 @@ export function Battle({ battle }: BattleDetailsProps) {
       <div className='flex w-full flex-col gap-4 md:w-[256px] md:gap-9'>
         <div className='flex w-full flex-col gap-3'>
           <div className='flex items-center gap-2'>
-            <span className='bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full px-2 py-0.5 text-xs font-medium'>
+            <span className='bg-blue-100 text-blue-800 rounded-full px-2 py-0.5 text-xs font-medium'>
               #{battle.number}
             </span>
-            <h2 className='text-gray-900 dark:text-gray-100 selection:bg-gray-300 selection:text-gray-900 dark:selection:bg-gray-700 dark:selection:text-gray-100 text-xl font-medium'>
+            <h2 className='text-gray-900 selection:bg-gray-300 selection:text-gray-900 text-xl font-medium'>
               {battle.name}
             </h2>
           </div>
 
-          <p className='text-gray-800 dark:text-gray-200 selection:bg-gray-300 selection:text-gray-900 dark:selection:bg-gray-700 dark:selection:text-gray-200 text-sm leading-relaxed'>
+          <p className='text-gray-800 selection:bg-gray-300 selection:text-gray-900 text-sm leading-relaxed'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
 
           {/* Total Target Count */}
-          <div className='flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400'>
-            <span className='bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded px-2 py-0.5'>
+          <div className='flex items-center gap-2 text-xs text-gray-500'>
+            <span className='bg-gray-100 text-gray-700 rounded px-2 py-0.5'>
               {battle.targets.length} Target
               {battle.targets.length === 1 ? '' : 's'}
             </span>
@@ -40,7 +40,7 @@ export function Battle({ battle }: BattleDetailsProps) {
           {['react', 'tailwindcss', 'framer motion'].map((tag) => (
             <div
               key={tag}
-              className="bg-gray-100 text-gray-900 dark:bg-gray-600 dark:text-gray-100 w-fit cursor-default rounded-md pt-[2px] pr-2 pb-[2px] pl-2 font-sans text-[12px]"
+              className="bg-gray-100 text-gray-900 w-fit cursor-default rounded-md pt-[2px] pr-2 pb-[2px] pl-2 font-sans text-[12px]"
             >
               {tag}
             </div>
